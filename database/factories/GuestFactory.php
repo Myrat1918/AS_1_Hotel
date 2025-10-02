@@ -19,8 +19,8 @@ class GuestFactory extends Factory
     {
        
         return [
-            "firstname" => fake()->words(1, true),
-            "lastname" => fake()->words(1, true),
+            "firstname" => fake()->firstname(),
+            "lastname" => fake()->lastname(),
             "passport_number" => fake()->unique()->postcode(),
         ];
     }
